@@ -10,6 +10,7 @@ export class AppComponent {
   
   nombre:string = "";
   apellido:string = "";
+  cargo:string = "";
   mensaje:string = "";
   registrado = false;
   entradas: any;
@@ -28,7 +29,6 @@ export class AppComponent {
   registrarUsario(){
     this.registrado= true;
     this.mensaje= "Usario registrado con éxtio con el nombre de: "+ this.nombre +" "+ this.apellido;
-    
   }
 
   
