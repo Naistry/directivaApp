@@ -11,7 +11,7 @@
 
 <br>
 
-<p *ngIf="registrado; else sinRegistrar">{{mensaje}} y tiene el cargo de <span [ngStyle]="{color:cargo =='director'? 'red': 'black'}">{{cargo}}</span></p>
+<p *ngIf="registrado; else sinRegistrar">{{mensaje}} y tiene el cargo de <span [ngClass]="{directores:cargo =='director'}">{{cargo}}</span></p>
 
 <ng-template #sinRegistrar>
 
